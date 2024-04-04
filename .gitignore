@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+pages
+components
+SVGs
 
 # Editor directories and files
 .vscode/*

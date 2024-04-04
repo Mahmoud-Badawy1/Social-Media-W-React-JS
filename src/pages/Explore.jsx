@@ -1,0 +1,1 @@
+// we need to format the page as in photo: it has a text component that have the Expolre text and the Feeds in componetnts: <FeedsSection> and < FeedsNavigation >

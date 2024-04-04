@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {getAllUsers, getUser } from "../redux/slices/usersSlice"; 
 
 const ExplorePosts = ({ posts }) => {
   return (
