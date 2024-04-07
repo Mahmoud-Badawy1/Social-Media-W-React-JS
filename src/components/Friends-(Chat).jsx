@@ -1,31 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getAllUsers } from '../redux/slices/usersSlice.js';
 
 function ChatList() {
-  // Chat Data
-  const chats = [
-    { id: 1, user: 'Mahomud Badawy', profilePic: '' },
-    { id: 2, user: 'Mohamed Farrag', profilePic: '' },
-    { id: 3, user: 'Abdullah Mahmoud', profilePic: '' },
-    { id: 4, user: 'Marwan Mohamed', profilePic: '' },
-    { id: 5, user: 'Ismael El-Naggar', profilePic: '' },
-  ];
+  const dispatch = useDispatch();
+  const users = useSelector((state) => state.users.users);
+  const status = useSelector((state) => state.users.status);
+  const error = useSelector((state) => state.users.error);
+
+  useEffect(() => {
+    if (status === 'idle') {
+      dispatch(getAllUsers());
+    }
+  }, [dispatch, status]);
 
   const renderChats = () => {
-    return chats.map((chat) => (
-      <li key={chat.id} className="mb-4 bg-white">
-
+    return users.map((user) => (
+      <li key={user.id} className="mb-4 bg-white">
         <a href='#' className="flex items-center">
-          {/* Profile Picture */}
           <div className="h-14 w-14 rounded-full bg-blue-500 flex items-center justify-center mr-4 text-white text-lg">
-            <img src={chat.profilePic} className="rounded-full" />
+            <img src={user.profilePic} alt="Profile" className="rounded-full" />
           </div>
-          {/* Username */}
           <div>
-            <p className="font-semibold">{chat.user}</p>
+            <p className="font-semibold">{user.username}</p> {/* Assuming 'username' property */}
           </div>
-
         </a>
-
       </li>
     ));
   };
@@ -34,6 +33,8 @@ function ChatList() {
     <div className="w-[350px]">
       <div className="p-6 flex flex-col h-screen">
         <h2 className="text-2xl font-semibold my-10">All messages</h2>
+        {status === 'loading' && <p>Loading...</p>}
+        {status === 'failed' && <p>Error: {error}</p>}
         <ul className="overflow-y-auto">{renderChats()}</ul>
       </div>
     </div>
