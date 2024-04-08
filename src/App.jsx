@@ -1,7 +1,7 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Explore from './pages/Explore';
 import ExplorePeoplePage from './pages/ExplorePeople';
 import LoginPage from './pages/LoginPage';
@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
+      <Router>
       <Routes>
         {/* <Route path="/" element={<SomeOtherComponent />} /> */}
         <Route path="/explore-posts" element={<Explore />} />
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/explore" element={<ExplorePeoplePage />} />
         {/* Add more routes as needed */}
       </Routes>
+      </Router>
     </>
   );
 }
