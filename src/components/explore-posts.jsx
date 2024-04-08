@@ -6,6 +6,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPosts } from '../redux/slices/postsSlice';
 import { Link } from 'react-router-dom';
+import '../index.css';
 
 const ExplorePosts = () => {
   const dispatch = useDispatch();

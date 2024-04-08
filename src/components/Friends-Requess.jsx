@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 function ChatList() {
   // You can adjust this Variable to add more users

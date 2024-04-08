@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react"
 import { useState } from "react";
+import '../index.css';
 
 function Navegation() {
     const [activeItem, setActiveItem] = useState("");

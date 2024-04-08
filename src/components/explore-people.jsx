@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getAllUsers } from '../redux/slices/usersSlice';
 import UserComponent from './FriendsComponent'; // Assuming this is the correct import path
 import Search from './Search'; // Assuming you have a Search component
+import '../index.css';
 
 const ExplorePeople = () => {
   const dispatch = useDispatch();

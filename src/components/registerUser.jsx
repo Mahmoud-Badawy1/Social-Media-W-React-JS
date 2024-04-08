@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { registerUser } from "../redux/slices/usersSlice"; // Adjust the import path as needed
+import '../index.css';
 
 const RegisterComponent = () => {
   const [userData, setUserData] = useState({
@@ -76,6 +77,19 @@ const RegisterComponent = () => {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
           </div>
+          
+          {/* Input field for phone number */}
+          <div className="mb-4">
+            <input
+              type="tel"
+              name="phone"
+              value={userData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
 
           {/* Input field for email */}
           <div className="mb-4">
@@ -101,6 +115,22 @@ const RegisterComponent = () => {
               required
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />
+          
+
+
+          {/* Input field for confirm password */}
+          <div className="mb-4">
+            <input
+              type="password"
+              name="confirm_password"
+              value={userData.confirm_password}
+              onChange={handleChange}
+              placeholder="Confirm Password"
+              required
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+
           </div>
 
           {/* Input field for date of birth (dob) */}
@@ -111,32 +141,6 @@ const RegisterComponent = () => {
               value={userData.dob}
               onChange={handleChange}
               placeholder="Date of Birth"
-              required
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-
-          {/* Input field for phone number */}
-          <div className="mb-4">
-            <input
-              type="tel"
-              name="phone"
-              value={userData.phone}
-              onChange={handleChange}
-              placeholder="Phone Number"
-              required
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            />
-          </div>
-
-          {/* Input field for confirm password */}
-          <div className="mb-4">
-            <input
-              type="password"
-              name="confirm_password"
-              value={userData.confirm_password}
-              onChange={handleChange}
-              placeholder="Confirm Password"
               required
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             />

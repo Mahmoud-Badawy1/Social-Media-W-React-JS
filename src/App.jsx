@@ -4,11 +4,13 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Explore from './pages/Explore';
 import ExplorePeoplePage from './pages/ExplorePeople';
+import LoginPage from './pages/LoginPage';
 import SignUp from './pages/SignUp';
+import './index.css';
+import Navegation from './components/Navegation';
+import ExplorePeoplePage from './pages/ExplorePeople';
+import Messages from './pages/Messages';
 
-
-
-// import SomeOtherComponent from './components'; // placeholder for any other components
 
 
 function App() {
@@ -18,8 +20,11 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<SomeOtherComponent />} /> */}
         <Route path="/explore-posts" element={<Explore />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/explore-people" element={<ExplorePeoplePage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route exact path="/other" element={<Navegation />} />
+        <Route exact path="/messages" element={<Messages />} />
+        <Route exact path="/explore" element={<ExplorePeoplePage />} />
         {/* Add more routes as needed */}
       </Routes>
     </>

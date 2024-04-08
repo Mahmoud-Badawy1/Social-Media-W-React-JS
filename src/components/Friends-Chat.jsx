@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 function ChatList() {
   // Chat Data

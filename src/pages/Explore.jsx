@@ -3,17 +3,16 @@
 import React from 'react';
 import ExplorePosts from '../components/explore-posts';
 import FeedsSection from '../components/feeds';
-import FeedsNavigation from '../components/feedsNavigatin';
 import Navigation from '../components/Navegation';
+import '../index.css';
 
 const Explore = () => {
   return (
-    <div className="container mx-auto flex">
-      <div className="w-1/4">
+    <div className="container mx-auto flex bg-[#fff6df]">
+      <div className=" w-1/6">
         <Navigation />
-        <FeedsNavigation />
       </div>
-      <div className="w-3/4">
+      <div className="w-3/4 flex">
         <FeedsSection />
         <ExplorePosts />
       </div>

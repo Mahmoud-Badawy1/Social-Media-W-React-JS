@@ -6,6 +6,7 @@
 
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import '../index.css';
 
 const FeedsSection = () => {
   const [activeSection, setActiveSection] = useState('explore'); // Default active section

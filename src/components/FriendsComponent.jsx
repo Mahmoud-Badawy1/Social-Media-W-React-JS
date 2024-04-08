@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 
 function UsersComponent() {
   // Chat Data
@@ -14,7 +15,7 @@ function UsersComponent() {
     return Users.map((chat) => (
       <li key={chat.id} className="mb-4 bg-white">
 
-        <a href='#' className="flex items-center">
+        <a href='${id}' className="flex items-center">
           {/* Profile Picture */}
           <div className="h-14 w-14 rounded-full bg-blue-500 flex items-center justify-center mr-4 text-white text-lg">
             <img src={chat.profilePic} className="rounded-full" />
@@ -30,7 +31,7 @@ function UsersComponent() {
   };
 
   return (
-    <div className="w-[350px]">
+    <div className="w-full">
       <div className="p-6 flex flex-col h-screen">
         <h2 className="text-2xl font-semibold my-10">All messages</h2>
         <ul className="overflow-y-auto">{renderUsers()}</ul>
