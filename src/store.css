@@ -1,0 +1,118 @@
+.stor {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.storeImg {
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 16px;
+  position: relative;
+}
+
+.fle {
+  display: flex;
+}
+
+.storeImg img {
+  width: 250px;
+  height: 390px;
+  border: 1px solid #070707;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.storeName {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50;
+  position: absolute;
+  bottom: 40px; /* تحديد المسافة بين storeName وأسفل عنصر storeImg */
+  left: 10px; /* تحديد المسافة بين storeName واليسار من عنصر storeImg */
+  background: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.storeName h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+
+}
+
+.storeName img {
+  position: absolute;
+  top: 50%;
+  left: 18px; /* تحديد المسافة من اليسار */
+  transform: translateY(-50%);
+  width: 25px; /* تعديل العرض حسب الحاجة */
+  height: 25px; /* تعديل الارتفاع حسب الحاجة */
+  border-radius: 50%; 
+}
+
+.Suggestions {
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.Suggestion {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 25px;
+  margin-bottom: 70px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 500px;
+}
+
+.Suggestion img {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 70px;
+  vertical-align: middle;
+  margin-top: 200px;
+}
+
+.Suggestion h1 {
+  margin-left: 125px; /* تحديد المسافة بين الصورة والعنوان */
+  font-size: 40px; /* حجم الخط للعنوان */
+  margin-bottom: 0; /* تقليل المسافة بين العنوان والزر */
+}
+
+.Suggestion button {
+  margin-left: 10%; /* تحديد المسافة بين العنوان والزر */
+  font-size: 16px; /* حجم الخط للزر */
+  background: #070707;
+  border-radius: 20px;
+  color: aliceblue;
+  width: 75.55px;
+  height: 30px;
+}
+
+.Recommendations {
+  margin-top: 100px;
+  /* margin-bottom: 20px; */
+}
+
+.name {
+  font-size: 60px;
+}
+
+.Recommendation {
+  display: flex;
+  align-items: center;
+}
+
+.Recommen img {
+  width: 100px;
+  height: auto;
+  margin-right: 220px;
+  margin-top: 100px;
+  
+}

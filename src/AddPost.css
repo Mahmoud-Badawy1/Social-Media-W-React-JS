@@ -1,0 +1,100 @@
+
+.addpost {
+  margin-top: 100px;
+  margin-left: 800px;
+  width: 1500px;
+  height: 600px;
+}
+
+.tout {
+  background-color: #F3F1F1;
+  width: 35%;
+  height: 23%;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.add {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.addp {
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  width: 90%;
+  height: 45px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.add img {
+  position: absolute;
+  top: 24%;
+  left: 25px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; 
+}
+
+.emoji {
+  position: absolute;
+  right: 57px;
+  top: 24%;
+  transform: translateY(-50%);
+  fill: #333;
+}
+
+.butto {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -80px; /* تحديد الإرتفاع بـ -50px */
+}
+
+.butt {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -44px; /* تحديد الإرتفاع بـ -50px */
+}
+
+.but {
+  color: #ffffff;
+  background-color: #0e0d0d;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 11px;
+  border-radius: 20px;
+  width: 100px;
+  height: 36px;
+  margin-left: 390px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.button {
+  display: flex;
+  margin-left: 50px;
+}
