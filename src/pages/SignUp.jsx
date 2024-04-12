@@ -1,5 +1,5 @@
 import React from 'react';
-import RegisterComponent from '../components/registerUser';
+import RegistrationForm from '../components/RegisterForm';
 import '../index.css';
 
 const SignUp = () => {
