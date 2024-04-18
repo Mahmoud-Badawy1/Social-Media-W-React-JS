@@ -1,16 +1,28 @@
 
 .addpost {
+<<<<<<< HEAD
   margin-top: 6%;
   margin-left: 30%;
   width: 80%;
   flex-wrap: wrap;
+=======
+  margin-top: 100px;
+  margin-left: 800px;
+  width: 1500px;
+  height: 600px;
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
 }
 
 .tout {
   background-color: #F3F1F1;
   width: 35%;
+<<<<<<< HEAD
   height: 33%;
   margin-top: 5%;
+=======
+  height: 23%;
+  margin-top: 20px;
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
   border-radius: 15px;
 }
 
@@ -24,6 +36,7 @@
   border: 1px solid #ccc; 
   border-radius: 20px;
   width: 90%;
+<<<<<<< HEAD
   height: 70px;
   margin-left: 10px;
   margin-top: 10px;
@@ -43,20 +56,35 @@
   margin-left: 70%;
   margin-top: 10%;
   font-size: 40px;
+=======
+  height: 45px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
 }
 
 .add img {
   position: absolute;
+<<<<<<< HEAD
   top: 20%;
   left: 23px;
   transform: translateY(-50%);
   width: 6%;
   height: 27%;
+=======
+  top: 24%;
+  left: 25px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
   border-radius: 50%; 
 }
 
 .emoji {
   position: absolute;
+<<<<<<< HEAD
   right: 10%;
   top: 18%;
   transform: translateY(-50%);
@@ -70,12 +98,22 @@
 }
 
 .butt {
+=======
+  right: 57px;
+  top: 24%;
+  transform: translateY(-50%);
+  fill: #333;
+}
+
+.butto {
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
   display: flex;
   color: #0e0d0d;
   padding: 5px 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   float: left;
   margin-left: 20px;
   display: flex;
@@ -169,6 +207,15 @@
   display: flex;
   margin-left: 8%;
   font-size: 50px;
+=======
+  margin: 5px;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -80px; /* تحديد الإرتفاع بـ -50px */
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
 }
 
 .butt {
@@ -178,6 +225,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   float: left;
   margin-left: 15px;
   display: flex;
@@ -200,4 +248,32 @@
   top: -95px; /* تحديد الإرتفاع بـ -50px */
 }
 
+=======
+  margin: 5px;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  font-size: 20px;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -44px; /* تحديد الإرتفاع بـ -50px */
+}
+
+.but {
+  color: #ffffff;
+  background-color: #0e0d0d;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 11px;
+  border-radius: 20px;
+  width: 100px;
+  height: 36px;
+  margin-left: 390px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.button {
+  display: flex;
+  margin-left: 50px;
+>>>>>>> 76827da739d0d50560f033d8bde97bbf952c4160
 }
