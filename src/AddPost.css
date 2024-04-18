@@ -1,16 +1,16 @@
 
 .addpost {
-  margin-top: 100px;
-  margin-left: 800px;
-  width: 1500px;
-  height: 600px;
+  margin-top: 6%;
+  margin-left: 30%;
+  width: 80%;
+  flex-wrap: wrap;
 }
 
 .tout {
   background-color: #F3F1F1;
   width: 35%;
-  height: 23%;
-  margin-top: 20px;
+  height: 33%;
+  margin-top: 5%;
   border-radius: 15px;
 }
 
@@ -24,60 +24,11 @@
   border: 1px solid #ccc; 
   border-radius: 20px;
   width: 90%;
-  height: 45px;
+  height: 70px;
   margin-left: 10px;
   margin-top: 10px;
   text-align: center;
-}
-
-.add img {
-  position: absolute;
-  top: 24%;
-  left: 25px;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%; 
-}
-
-.emoji {
-  position: absolute;
-  right: 57px;
-  top: 24%;
-  transform: translateY(-50%);
-  fill: #333;
-}
-
-.butto {
-  display: flex;
-  color: #0e0d0d;
-  padding: 5px 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  float: left;
-  margin-left: 20px;
-  display: flex;
-  font-size: 20px;
-  position: relative; /* تحديد الموقع كنسبي */
-  top: -80px; /* تحديد الإرتفاع بـ -50px */
-}
-
-.butt {
-  display: flex;
-  color: #0e0d0d;
-  padding: 5px 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  float: left;
-  margin-left: 20px;
-  display: flex;
-  font-size: 20px;
-  position: relative; /* تحديد الموقع كنسبي */
-  top: -44px; /* تحديد الإرتفاع بـ -50px */
+  font-size: 50px;
 }
 
 .but {
@@ -87,14 +38,166 @@
   cursor: pointer;
   margin: 11px;
   border-radius: 20px;
-  width: 100px;
-  height: 36px;
-  margin-left: 390px;
-  margin-top: 40px;
-  font-size: 20px;
+  width: 19%;
+  height: 70px;
+  margin-left: 70%;
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+.add img {
+  position: absolute;
+  top: 20%;
+  left: 23px;
+  transform: translateY(-50%);
+  width: 6%;
+  height: 27%;
+  border-radius: 50%; 
+}
+
+.emoji {
+  position: absolute;
+  right: 10%;
+  top: 18%;
+  transform: translateY(-50%);
+  font-size: 50px;
 }
 
 .button {
   display: flex;
-  margin-left: 50px;
+  margin-left: 10%;
+  font-size: 50px;
+}
+
+.butt {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-left: 20px;
+  display: flex;
+  position: relative;
+  top: -95px;
+}
+
+
+.butto {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-left: 55%;
+  display: flex;
+  position: relative;
+  top: -95px;
+}
+
+@media screen and (max-width: 2900px) {
+
+
+.addpost {
+  margin-top: 6%;
+  margin-left: 30%;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.tout {
+  background-color: #F3F1F1;
+  width: 35%;
+  height: 33%;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+
+.add {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.addp {
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  width: 90%;
+  height: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.but {
+  color: #ffffff;
+  background-color: #0e0d0d;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 11px;
+  border-radius: 20px;
+  width: 19%;
+  height: 70px;
+  margin-left: 80%;
+  margin-top: 10%;
+  font-size: 40px;
+}
+
+.add img {
+  position: absolute;
+  top: 20%;
+  left: 23px;
+  transform: translateY(-50%);
+  width: 6%;
+  height: 27%;
+  border-radius: 50%; 
+}
+
+.emoji {
+  position: absolute;
+  right: 10%;
+  top: 18%;
+  transform: translateY(-50%);
+  font-size: 50px;
+}
+
+.button {
+  display: flex;
+  margin-left: 8%;
+  font-size: 50px;
+}
+
+.butt {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  display: flex;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -95px; /* تحديد الإرتفاع بpx */
+}
+
+
+.butto {
+  display: flex;
+  color: #0e0d0d;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  margin-left: 35%;
+  display: flex;
+  position: relative; /* تحديد الموقع كنسبي */
+  top: -95px; /* تحديد الإرتفاع بـ -50px */
+}
+
 }

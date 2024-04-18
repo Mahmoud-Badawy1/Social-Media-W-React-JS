@@ -1,0 +1,21 @@
+    <div className="button">
+                    <button
+          onClick={triggerFileInput}
+          className="p-2 bg-blue-500 rounded text-white mr-2"
+        >
+          <img
+            src="./src/SVGs/Pictures Folder.svg"
+            alt="Upload"
+            className="h-6 w-6"
+          />
+          img
+        </button>
+        {/* Actual file input, hidden */}
+        <input
+          type="file"
+          ref={fileInputRef} // Add this line
+          onChange={handleFileUpload}
+          className="hidden" // Tailwind CSS class to hide element
+        />{" "}
+ 
+                        <div>
